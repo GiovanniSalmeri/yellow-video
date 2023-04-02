@@ -21,22 +21,22 @@ The following arguments are available, all but the first argument are optional:
 
 <a id="sources"></a>The following video sources are supported:
 
-Local (file name of a local video, in `mp4`, `webm` or `ogg` format)  
-Url (address of a video, in `mp4`, `webm` or `ogg` format)  
-[Bilibili](https://www.bilibili.com)  
-[Bitchute](https://www.bitchute.com)  
-[DailyMotion](https://www.dailymotion.com)  
-[Niconico](https://www.nicovideo.jp)  
-[Odysee](https://odysee.com)  
-[PeerTube](https://joinpeertube.org/) (`id` and `instance` in the form `id@instance`)  
-[SoundCloud](https://soundcloud.com/)  
-[talkies.tv](https://talkies.tv/)  
-[TEDtalks](https://www.ted.com/talks/)  
-[Utreon](https://utreon.com) (the `id` is to be prefixed with `>`)  
-[VidLii](https://www.vidlii.com) (the `id` is to be prefixed with `!`)  
-[Vimeo](https://vimeo.com/)  
-[Wistia](https://wistia.net/)  
-[YouTube](https://www.youtube.com)  
++ Local (file name of a local video, in `mp4`, `webm` or `ogg` format)  
++ Url (address of a video, in `mp4`, `webm` or `ogg` format)  
++ [Bilibili](https://www.bilibili.com)  
++ [Bitchute](https://www.bitchute.com)  
++ [DailyMotion](https://www.dailymotion.com)  
++ [Niconico](https://www.nicovideo.jp)  
++ [Odysee](https://odysee.com)  
++ [PeerTube](https://joinpeertube.org/) (`id` and `instance` in the form `id@instance`)  
++ [SoundCloud](https://soundcloud.com/)  
++ [talkies.tv](https://talkies.tv/)  
++ [TEDtalks](https://www.ted.com/talks/)  
++ [Utreon](https://utreon.com) (the `id` is to be prefixed with `>`)  
++ [VidLii](https://www.vidlii.com) (the `id` is to be prefixed with `!`)  
++ [Vimeo](https://vimeo.com/)  
++ [Wistia](https://wistia.net/)  
++ [YouTube](https://www.youtube.com)  
 
 You should know that the third-party providers collect personal data and uses cookies.
 
