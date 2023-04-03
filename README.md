@@ -23,19 +23,19 @@ The following arguments are available, all but the first argument are optional:
 
 `name` of a video (MP4, WEBM or OGG) in the `media/videos` folder  
 `url` of a video (MP4, WEBM or OGG)  
-`id` of a [Bilibili](https://www.bilibili.com) video  
-`id` of a [Bitchute](https://www.bitchute.com) video  
+`id` of a [bilibili](https://www.bilibili.com) video  
+`id` of a [BitChute](https://www.bitchute.com) video  
 `id` of a [DailyMotion](https://www.dailymotion.com) video  
 `id` of a [Niconico](https://www.nicovideo.jp) video  
 `id` of a [Odysee](https://odysee.com) video  
 `id` and `instance` of a [PeerTube](https://joinpeertube.org/) video, written as `id@instance`  
 `id` of a [SoundCloud](https://soundcloud.com/) video  
 `id` of a [talkies.tv](https://talkies.tv/) video  
-`id` of a [TEDtalks](https://www.ted.com/talks/) video  
+`id` of a [TED Talks](https://www.ted.com/talks/) video  
 `id` of a [Utreon](https://utreon.com) video, prefixed with `>`  
 `id` of a [VidLii](https://www.vidlii.com) video, prefixed with `!`  
 `id` of a [Vimeo](https://vimeo.com/) video  
-`id` of a [Wistia](https://wistia.net/) video  
+`id` of a [Wistia](https://wistia.com/) video  
 `id` of a [YouTube](https://www.youtube.com) video  
 
 The `id` is the last part of the link with which the video is accessed.
