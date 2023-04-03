@@ -39,7 +39,7 @@ class YellowVideo {
             ];
             $templates = [
                 "video" => "<video class=\"@type\" src=\"@src\" controls=\"controls\" preload=\"metadata\"@dim><p>@src</p></video>",
-                "iframe" => "<iframe class=\"video @type\" data-video-src=\"@src\" frameborder=\"0\" allow=\"accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen\" loading=\"lazy\" sandbox=\"allow-scripts allow-same-origin\"@dim><p>@src</p></iframe>",
+                "iframe" => "<iframe class=\"video @type\" src=\"@src\" frameborder=\"0\" allow=\"accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen\" loading=\"lazy\" sandbox=\"allow-scripts allow-same-origin\"@dim><p>@src</p></iframe>",
             ];
             if (empty($style)) $style = $this->yellow->system->get("videoStyle");
             $output = "<div class=\"".htmlspecialchars($style)."\">";
@@ -67,7 +67,6 @@ class YellowVideo {
         if ($name=="header") {
             $extensionLocation = $this->yellow->system->get("coreServerBase").$this->yellow->system->get("coreExtensionLocation");
             $output .= "<link rel=\"stylesheet\" type=\"text/css\" media=\"all\" href=\"{$extensionLocation}video.css\" />\n";
-            $output .= "<script type=\"text/javascript\" defer=\"defer\" src=\"{$extensionLocation}video.js\"></script>\n";
         }
         return $output;
     }
