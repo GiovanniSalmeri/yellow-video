@@ -14,29 +14,31 @@ Create a `[video]` shortcut.
 
 The following arguments are available, all but the first argument are optional:
  
-`Id` = file name or address or `id` of [supported video sources](#sources)  
+`Source` = video source, [supported video sources](#sources)  
 `Style` = video style, e.g. `left`, `center`, `right`  
 `Width` = video width, pixel or percent  
 `Height` = video height, pixel or percent  
 
 <a id="sources"></a>The following video sources are supported:
 
-+ Local (file name of a local video, in `mp4`, `webm` or `ogg` format)  
-+ Url (address of a video, in `mp4`, `webm` or `ogg` format)  
-+ [Bilibili](https://www.bilibili.com)  
-+ [Bitchute](https://www.bitchute.com)  
-+ [DailyMotion](https://www.dailymotion.com)  
-+ [Niconico](https://www.nicovideo.jp)  
-+ [Odysee](https://odysee.com)  
-+ [PeerTube](https://joinpeertube.org/) (`id` and `instance` in the form `id@instance`)  
-+ [SoundCloud](https://soundcloud.com/)  
-+ [talkies.tv](https://talkies.tv/)  
-+ [TEDtalks](https://www.ted.com/talks/)  
-+ [Utreon](https://utreon.com) (the `id` is to be prefixed with `>`)  
-+ [VidLii](https://www.vidlii.com) (the `id` is to be prefixed with `!`)  
-+ [Vimeo](https://vimeo.com/)  
-+ [Wistia](https://wistia.net/)  
-+ [YouTube](https://www.youtube.com)  
+`name` of a video (MP4, WEBM or OGG) in the `media/videos` folder  
+`url` of a video (MP4, WEBM or OGG)  
+`id` of a [Bilibili](https://www.bilibili.com) video  
+`id` of a [Bitchute](https://www.bitchute.com) video  
+`id` of a [DailyMotion](https://www.dailymotion.com) video  
+`id` of a [Niconico](https://www.nicovideo.jp) video  
+`id` of a [Odysee](https://odysee.com) video  
+`id` and `instance` of a [PeerTube](https://joinpeertube.org/) video, written as `id@instance`  
+`id` of a [SoundCloud](https://soundcloud.com/) video  
+`id` of a [talkies.tv](https://talkies.tv/) video  
+`id` of a [TEDtalks](https://www.ted.com/talks/) video  
+`id` of a [Utreon](https://utreon.com) video, prefixed with `>`  
+`id` of a [VidLii](https://www.vidlii.com) video, prefixed with `!`  
+`id` of a [Vimeo](https://vimeo.com/) video  
+`id` of a [Wistia](https://wistia.net/) video  
+`id` of a [YouTube](https://www.youtube.com) video  
+
+The `id` is the last part of the link with which the video is accessed.
 
 You should know that third-party providers collect personal data and use cookies.
 
@@ -45,7 +47,7 @@ You should know that third-party providers collect personal data and use cookies
 Embedding a video, different videos:
 
     [video my_video.webm]
-    [video http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4]
+    [video https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4]
     [video x8fdwjh]
     [video 52db3ab7-81e0-447b-a741-000375a369d9@video.violoncello.ch]
     [video e99D0gnqG-c]
@@ -61,7 +63,7 @@ Embedding a video, different sizes:
 The following settings can be configured in file `system/extensions/yellow-system.ini`:
 
 `VideoStyle` = video style, e.g. `flexible`  
-`VideoLocation` (default: `/media/videos/`) = location of local videos  
+`VideoLocation` (default: `/media/videos/`) = location for videos  
 
 ## Acknowledgements
 
