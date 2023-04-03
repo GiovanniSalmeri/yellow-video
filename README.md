@@ -38,7 +38,7 @@ The following arguments are available, all but the first argument are optional:
 + [Wistia](https://wistia.net/)  
 + [YouTube](https://www.youtube.com)  
 
-You should know that the third-party providers collect personal data and uses cookies.
+You should know that third-party providers collect personal data and use cookies.
 
 ## Examples
 
