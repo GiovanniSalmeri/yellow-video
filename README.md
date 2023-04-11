@@ -29,7 +29,6 @@ The following arguments are available, all but the first argument are optional:
 `id` of a [Niconico](https://www.nicovideo.jp) video  
 `id` of a [Odysee](https://odysee.com) video  
 `id` and `instance` of a [PeerTube](https://joinpeertube.org/) video, written as `id@instance`  
-`id` of a [SoundCloud](https://soundcloud.com/) video  
 `id` of a [talkies.tv](https://talkies.tv/) video  
 `id` of a [TED Talks](https://www.ted.com/talks/) video  
 `id` of a [Utreon](https://utreon.com) video, prefixed with `>`  

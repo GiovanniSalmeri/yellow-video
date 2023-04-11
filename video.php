@@ -33,7 +33,6 @@ class YellowVideo {
                 "odysee" => [ "/^@[A-Za-z0-9\.\-_]+:./[A-Za-z0-9\.\-_]+:.$/", "https://odysee.com/$/embed/@0", "iframe" ],
                 "wistia" => [ "/^[a-z0-9]{10}$/", "https://fast.wistia.net/embed/iframe/@0", "iframe" ],
                 "talkies" => [ "/^[a-z0-9]{1,5}$/", "https://talkies.tv/embed/@0", "iframe" ],
-                "soundcloud" => [ "/^[A-Za-z0-9\-]+/[A-Za-z0-9\-]+$/", "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/@0&visual=true&sharing=false", "iframe" ],
             ];
             $templates = [
                 "video" => "<video class=\"@type\" src=\"@src\" controls=\"controls\" preload=\"metadata\"@dim><p>@src</p></video>",
