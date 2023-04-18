@@ -39,6 +39,9 @@ class YellowVideo {
                 "iframe" => "<iframe class=\"video @type\" src=\"@src\" frameborder=\"0\" allow=\"accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen\" loading=\"lazy\" sandbox=\"allow-scripts allow-same-origin\"@dim><p>@src</p></iframe>",
             ];
             if (is_string_empty($style)) $style = $this->yellow->system->get("videoStyle");
+            if (is_string_empty($height)) $height = $width;
+            $width = $this->convertValueAndUnit($width, 640);
+            $height = $this->convertValueAndUnit($height, 360);
             $output = "<div class=\"".htmlspecialchars($style)."\">";
             foreach ($services as $videoType=>list($pattern, $sourceTemplate, $element)) {
                 if (preg_match($pattern, $id, $matches)) {
@@ -56,6 +59,17 @@ class YellowVideo {
             $output .= "</div>";
         }
         return $output;
+    }
+
+    // Return value according to unit
+    public function convertValueAndUnit($text, $valueBase) {
+        $value = $unit = "";
+        if (preg_match("/([\d\.]+)(\S*)/", $text, $matches)) {
+            $value = $matches[1];
+            $unit = $matches[2];
+            if ($unit=="%") $value = $valueBase * $value / 100;
+        }
+        return intval($value);
     }
 
     // Handle page extra data
