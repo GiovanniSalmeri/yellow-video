@@ -19,6 +19,8 @@ The following arguments are available, all but the first argument are optional:
 `Width` = video width, pixel or percent  
 `Height` = video height, pixel or percent  
 
+All media files are located in the `media` folder. The `media/videos` folder is the place to store your videos. You can also create additional folders and organise files as you like.
+
 <a id="sources"></a>The following video sources are supported:
 
 `name` of a video (MP4, WEBM or OGG) in the `media/videos` folder  
@@ -62,7 +64,7 @@ Embedding a video, different sizes:
 The following settings can be configured in file `system/extensions/yellow-system.ini`:
 
 `VideoStyle` = video style, e.g. `flexible`  
-`VideoLocation` (default: `/media/videos/`) = location for videos  
+`VideoLocation`= location for videos  
 
 ## Acknowledgements
 
