@@ -2,7 +2,7 @@
 // Video extension, https://github.com/GiovanniSalmeri/yellow-video
 
 class YellowVideo {
-    const VERSION = "0.8.22";
+    const VERSION = "0.9.1";
     public $yellow;         // access to API
 
     // Handle initialisation
@@ -13,7 +13,7 @@ class YellowVideo {
     }
 
     // Handle page content of shortcut
-    public function onParseContentShortcut($page, $name, $text, $type) {
+    public function onParseContentElement($page, $name, $text, $attributes, $type) {
         $output = null;
         if ($name=="video" && ($type=="block" || $type=="inline")) {
             list($id, $style, $width, $height) = $this->yellow->toolbox->getTextArguments($text);
@@ -76,8 +76,8 @@ class YellowVideo {
     public function onParsePageExtra($page, $name) {
         $output = null;
         if ($name=="header") {
-            $extensionLocation = $this->yellow->system->get("coreServerBase").$this->yellow->system->get("coreExtensionLocation");
-            $output .= "<link rel=\"stylesheet\" type=\"text/css\" media=\"all\" href=\"{$extensionLocation}video.css\" />\n";
+            $assetLocation = $this->yellow->system->get("coreServerBase").$this->yellow->system->get("coreAssetLocation");
+            $output .= "<link rel=\"stylesheet\" type=\"text/css\" media=\"all\" href=\"{$assetLocation}video.css\" />\n";
         }
         return $output;
     }
