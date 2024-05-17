@@ -12,7 +12,7 @@ class YellowVideo {
         $this->yellow->system->setDefault("videoLocation", "/media/videos/");
     }
 
-    // Handle page content of shortcut
+    // Handle page content element
     public function onParseContentElement($page, $name, $text, $attributes, $type) {
         $output = null;
         if ($name=="video" && ($type=="block" || $type=="inline")) {
