@@ -1,6 +1,6 @@
-# Video 0.9.1
+# Video 0.9.2
 
-Embed videos.
+Add videos.
 
 <p align="center"><img src="SCREENSHOT.png" alt="Screenshot"></p>
 
@@ -14,34 +14,14 @@ Create a `[video]` shortcut.
 
 The following arguments are available, all but the first argument are optional:
  
-`Source` = video source, [supported video sources](#sources)  
+`Source` = video source, name or url  
 `Style` = video style, e.g. `left`, `center`, `right`  
 `Width` = video width, pixel or percent  
 `Height` = video height, pixel or percent  
 
-All media files are located in the `media` folder. The `media/videos` folder is the place to store your videos. You can also create additional folders and organise files as you like.
+The video formats MP4, WEBM and OGG are supported. All media files are located in the `media` folder. The `media/videos` folder is the place to store your videos. You can also create additional folders and organise files as you like.
 
-<a id="sources"></a>The following video sources are supported:
-
-`name` of a video (MP4, WEBM or OGG) in the `media/videos` folder  
-`url` of a video (MP4, WEBM or OGG)  
-`id` of a [bilibili](https://www.bilibili.com) video  
-`id` of a [BitChute](https://www.bitchute.com) video  
-`id` of a [DailyMotion](https://www.dailymotion.com) video  
-`id` of a [Niconico](https://www.nicovideo.jp) video  
-`id` of a [Odysee](https://odysee.com) video  
-`id` and `instance` of a [PeerTube](https://joinpeertube.org/) video, written as `id@instance`  
-`id` of a [talkies.tv](https://talkies.tv/) video  
-`id` of a [TED Talks](https://www.ted.com/talks/) video  
-`id` of a [Utreon](https://utreon.com) video, prefixed with `>`  
-`id` of a [VidLii](https://www.vidlii.com) video, prefixed with `!`  
-`id` of a [Vimeo](https://vimeo.com/) video  
-`id` of a [Wistia](https://wistia.com/) video  
-`id` of a [YouTube](https://www.youtube.com) video  
-
-The `id` is the last part of the link with which the video is accessed.
-
-You should know that third-party providers collect personal data and use cookies.
+For embedding videos from streaming services there is the [Embed](https://github.com/GiovanniSalmeri/yellow-embed) extension.
 
 ## Examples
 
@@ -49,15 +29,12 @@ Embedding a video, different videos:
 
     [video my_video.webm]
     [video https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4]
-    [video x8fdwjh]
-    [video 52db3ab7-81e0-447b-a741-000375a369d9@video.violoncello.ch]
-    [video e99D0gnqG-c]
 
 Embedding a video, different sizes:
 
-    [video x8fdwjh right 50%]
-    [video x8fdwjh right 200 112]
-    [video x8fdwjh right 400 224]
+    [video my_video.webm right 50%]
+    [video my_video.webm right 200 112]
+    [video my_video.webm right 400 224]
 
 ## Settings
 
@@ -68,7 +45,7 @@ The following settings can be configured in file `system/extensions/yellow-syste
 
 ## Acknowledgements
 
-This extension is based on [Youtube](https://github.com/annaesvensson/yellow-youtube) by Anna Svensson. Thank you for the good work. This extension uses [various sources](#sources) for the videos. Thank you for the free services.
+This extension is based on Youtube (now discontinued) by Anna Svensson. Thank you for the good work. 
 
 ## Developer
 
