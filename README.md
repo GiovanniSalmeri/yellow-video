@@ -25,12 +25,12 @@ For embedding videos from streaming services there is the [Embed](https://github
 
 ## Examples
 
-Embedding a video, different videos:
+Adding a video, different videos:
 
     [video my_video.webm]
     [video https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4]
 
-Embedding a video, different sizes:
+Adding a video, different sizes:
 
     [video my_video.webm right 50%]
     [video my_video.webm right 200 112]
