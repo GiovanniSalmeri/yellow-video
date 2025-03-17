@@ -8,7 +8,7 @@ Add videos.
 
 [Download ZIP file](https://github.com/GiovanniSalmeri/yellow-video/archive/refs/heads/main.zip) and copy it into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
 
-## How to embed a video
+## How to add a video
 
 Create a `[video]` shortcut. 
 
