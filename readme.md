@@ -1,8 +1,8 @@
-# Video 0.9.2
+# Video 1.0.0
 
-Add videos.
+Add videos. Developed by Giovanni Salmeri.
 
-<p align="center"><img src="SCREENSHOT.png" alt="Screenshot"></p>
+<p align="center"><img src="screenshot.png" alt="Screenshot"></p>
 
 ## How to install an extension
 
@@ -47,6 +47,4 @@ The following settings can be configured in file `system/extensions/yellow-syste
 
 This extension is based on Youtube (now discontinued) by Anna Svensson. Thank you for the good work. 
 
-## Developer
-
-Giovanni Salmeri. [Get help](https://datenstrom.se/yellow/help/).
+Do you have questions? [Get help](https://datenstrom.se/yellow/help/).

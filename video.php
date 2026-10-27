@@ -2,7 +2,7 @@
 // Video extension, https://github.com/GiovanniSalmeri/yellow-video
 
 class YellowVideo {
-    const VERSION = "0.9.2";
+    const VERSION = "1.0.0";
     public $yellow;         // access to API
 
     // Handle initialisation
@@ -53,7 +53,7 @@ class YellowVideo {
         $output = null;
         if ($name=="header") {
             $assetLocation = $this->yellow->system->get("coreServerBase").$this->yellow->system->get("coreAssetLocation");
-            $output .= "<link rel=\"stylesheet\" type=\"text/css\" media=\"all\" href=\"{$assetLocation}video.css\" />\n";
+            $output .= "<link rel=\"stylesheet\" media=\"all\" href=\"{$assetLocation}video.css\" />\n";
         }
         return $output;
     }
